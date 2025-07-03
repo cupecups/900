@@ -1,122 +1,92 @@
-<!DOCTYPE html>
-<html manifest="./cache.manifest">
-<style>
-   body {
-        font-family: 'Cutive Mono', monospace;
-      }
-	  </style>
+<!-- Copyright (C) 2023-2025 anonymous
 
-	<head>
+This file is part of PSFree.
 
-		<meta charset="UTF-8">
+PSFree is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
 
-		<title>LapseNinetails_900</title>
+PSFree is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
 
-		<meta name="description" content="">
-		<meta name="author" content="cupecups">
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+<html>
+    <head>
+  <meta charset="UTF-8">
+  <title>LapseNinetails_900</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-		<meta name="viewport" content="width=460, user-scalable=no" />
+    body {
+      background: linear-gradient(to bottom right, #063FAB, #01258A);
+      background-image: url('bg.png');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      font-family: 'Nexa', sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
 
-		<link href='#' rel='stylesheet' type='text/css'>
-		<link href="css/style.css" rel="stylesheet" type="text/css" />
+    @font-face {
+      font-family: 'logging';
+      src: url('fonts/LiberationMono-Regular.ttf');
+    }
 
-	</head>
-	
+    .card {
+      background: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(10px);
+      padding: 40px;
+      border-radius: 80px;
+      text-align: center;
+      width: 90%;
+      max-width: 700px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
 
-	<body>
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
 
-		<div class="btn">
-			<div class="btn-back">
-				<p>ready to freedom</p>
-				<button class="yes"><a href="./hex.html" style="text-decoration:none; color : #ffffff;" >yes</button></a>
-				<button class="no">no</button>
-			</div>
-			<div class="btn-front"><b>Jailbreak</b></div>
-		</div>
+    #console {
+      font-family: 'logging', monospace;
+      font-size: 18px;
+      text-align: left;
+      background: rgba(1, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 50px;
+      white-space: pre-wrap;
+      height: 300px;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    if (window.applicationCache.status === 0) {
+      window.location.replace("cache.html");
+    }
+  </script>
 
-		<p class="description">Click Jailbreak button to start the lapse exploit!</p>
+  <div class="card">
+    <h1>Console log, please be patient!</h1>
+    <pre id="console"></pre>
+  </div>
 
-		<script src="js/script.js"></script>
-
-		<!-- Third party scripts and sharing UI -->
-
-		<p class="project-title" ><font color="black">Lapse Exploit PS4 9.00 PS4free mods by cups</font></p>
-
-		<div class="credits">
-			<a href="https://github.com/cupecups">Source on GitHub</a>
-		<a href="https://twitter.com/uccops">Follow @uccops</a>
-		</div>
-
-		<style type="text/css" media="screen">
-			.project-title {
-				position: absolute;
-				left: 25px;
-				bottom: 8px;
-
-				font-size: 16px;
-				color: #fff;
-			}
-
-			.credits {
-				position: absolute;
-				right: 20px;
-				bottom: 25px;
-				font-size: 15px;
-				z-index: 20;
-				color: #fff;
-				vertical-align: middle;
-			}
-
-			.credits * + * {
-				margin-left: 15px;
-			}
-
-			.credits a {
-				padding: 8px 10px;
-				color: #000;
-				border: 2px solid #000;
-				text-decoration: none;
-			}
-
-			.credits a:hover {
-				border-color: #ffd966;
-				color: #000;
-			}
-
-			@media screen and (max-width: 1040px) {
-				.project-title {
-					display: none;
-				}
-
-				.credits {
-					width: 100%;
-					left: 0;
-					right: auto;
-					bottom: 0;
-					padding: 30px 0;
-					background: #ffd966;
-					text-align: center;
-				}
-
-				.credits a {
-					display: inline-block;
-					margin-top: 7px;
-					margin-bottom: 7px;
-				}
-			}
-		</style>
-
-		<script>
-			var _gaq = [['_setAccount', 'UA-15240703-1'], ['_trackPageview']];
-			(function(d, t) {
-			var g = d.createElement(t),
-			    s = d.getElementsByTagName(t)[0];
-			g.async = true;
-			g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			s.parentNode.insertBefore(g, s);
-			})(document, 'script');
-		</script>
-
-	</body>
-
+  <script src="payload.js"></script>
+  <script type="module" src="./alert.mjs"></script>
+</body>
 </html>
