@@ -1,0 +1,34 @@
+CACHE MANIFEST 
+# LapseNinetails_900
+
+about.html
+alert.mjs
+cache.html
+config.mjs
+index.html
+hex.html
+bg.png
+cache.png
+lapse.mjs
+payload.bin
+psfree.mjs
+fonts\LiberationMono-Regular.ttf
+kpatch\900.elf
+module\chain.mjs
+module\constants.mjs
+module\int64.mjs
+module\mem.mjs
+module\memtools.mjs
+module\offset.mjs
+module\rw.mjs
+module\utils.mjs
+module\view.mjs
+rop\900.mjs
+css\style.css
+js\script.js
+
+NETWORK:
+*
+
+SETTINGS:
+prefer-online:
