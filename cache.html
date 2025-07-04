@@ -1,3 +1,23 @@
+<html manifest="cache.manifest">
+<head>
+<title>LapseNinetails_900</title>
+<link rel="shortcut icon" href="favicon.ico"></link>
+<style>
+body{background-image: url("./module/cache.png");background-repeat: no-repeat;background-size:60%;background-position: center;background-color: white;
+color:black;font-size:20px;text-align:center;margin:0;overflow:hidden;}
+.info{overflow: hidden;position: fixed;position: absolute;top: 45%;left: 50%;font-size: 25px;font-family: sans-serif;color: black;transform: translate(-50%, -50%);}
+</style>
 <script>
-document.write(unescape('%3Chtml%20manifest%3D%22cache.manifest%22%3E%0A%3Chead%3E%0A%3Ctitle%3ELapseNinetails_900%3C/title%3E%0A%3Clink%20rel%3D%22shortcut%20icon%22%20href%3D%22favicon.ico%22%3E%3C/link%3E%0A%3Cstyle%3E%0Abody%7Bbackground-image%3A%20url%28%22./module/cache.png%22%29%3Bbackground-repeat%3A%20no-repeat%3Bbackground-size%3A60%25%3Bbackground-position%3A%20center%3Bbackground-color%3A%20white%3B%0Acolor%3Ablack%3Bfont-size%3A20px%3Btext-align%3Acenter%3Bmargin%3A0%3Boverflow%3Ahidden%3B%7D%0A.info%7Boverflow%3A%20hidden%3Bposition%3A%20fixed%3Bposition%3A%20absolute%3Btop%3A%2045%25%3Bleft%3A%2050%25%3Bfont-size%3A%2025px%3Bfont-family%3A%20sans-serif%3Bcolor%3A%20black%3Btransform%3A%20translate%28-50%25%2C%20-50%25%29%3B%7D%0A%3C/style%3E%0A%3Cscript%3E%0Ahistory.replaceState%28null%2Cnull%2C%27index.html%27%29%3Bvar%20histlength%3Dhistory.length%3Bhistory.go%28-histlength%29%3B%0Afunction%20DLProgress%28e%29%7BPercent%3D%28Math.round%28e.loaded%20/%20e.total%20*%20100%29%29%3Bmsgs.innerHTML%3D%22Installing%20Offline%20Cache%20...%20%22%20+%20Percent%20+%20%22%25%22%7D%3B%0Afunction%20DisplayCacheProgress%28%29%7B%0AsetTimeout%28function%28%29%7Bmsgs.innerHTML%3D%22Cache%20Installed%20Successfully%22%3B%7D%2C2000%29%3B%0AsetTimeout%28function%28%29%7Blocation.reload%28%29%3B%7D%2C3000%29%3B%0A%7D%0Awindow.applicationCache.addEventListener%28%22progress%22%2CDLProgress%2Cfalse%29%3Bwindow.applicationCache.oncached%3Dfunction%28e%29%7BDisplayCacheProgress%28%29%3B%7D%3Bwindow.applicationCache.onupdateready%3Dfunction%28e%29%7BDisplayCacheProgress%28%29%3B%7D%3B%0A%3C/script%3E%0A%3C/head%3E%0A%3Cbody%20style%3Doverflow%3Ahidden%3E%0A%3Cdiv%20id%3Dmsgs%20class%3Dinfo%20style%3D%27-webkit-font-feature-settings%3A%22tnum%22%3Bfont-feature-settings%3A%22tnum%22%3B%27%3E%3C/div%3E%0A%3C/body%3E%0A%3C/html%3E'));
+history.replaceState(null,null,'index.html');var histlength=history.length;history.go(-histlength);
+function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));msgs.innerHTML="Installing Offline Cache ... " + Percent + "%"};
+function DisplayCacheProgress(){
+setTimeout(function(){msgs.innerHTML="Cache Installed Successfully";},2000);
+setTimeout(function(){location.reload();},3000);
+}
+window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
 </script>
+</head>
+<body style=overflow:hidden>
+<div id=msgs class=info style='-webkit-font-feature-settings:"tnum";font-feature-settings:"tnum";'></div>
+</body>
+</html>
