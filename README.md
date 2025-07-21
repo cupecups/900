@@ -29,8 +29,8 @@ _Note: Support for other firmwares listed in the "Vulnerability Scope" table may
 
 ## TODO List
 
-- [?] Blackscreen/Save issue with certain games
-     to fix add goldhen "plugin aio_fix_505.prx" and load as default
+- [ ] Blackscreen/Save issue with certain games
+     -> to fix add goldhen "plugin aio_fix_505.prx" and load as default
 - [ ] `lapse.mjs`: Just set the bits for JIT privs
 - [ ] `view.mjs`: Assumes PS4, support PS5 as well
 - [ ] Add PS5 support
