@@ -1,6 +1,7 @@
 CACHE MANIFEST 
-# LapseNinetails_900
+# PSFree-Lapse
 
+about.html
 alert.mjs
 cache.html
 config.mjs
@@ -19,15 +20,11 @@ module\offset.mjs
 module\rw.mjs
 module\utils.mjs
 module\view.mjs
-module\cache.png
-module\bg.png
 rop\900.mjs
-css\style.css
-css\payload-style.css
-js\script.js
 
 NETWORK:
 *
 
 SETTINGS:
 prefer-online:
+
